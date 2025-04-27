@@ -1,0 +1,193 @@
+import { Video, Comment, Channel } from '../types';
+
+export const channels: Channel[] = [
+  {
+    id: '1',
+    name: 'Tech Insights',
+    avatar: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    subscribers: 1200000,
+    verified: true,
+  },
+  {
+    id: '2',
+    name: 'Nature Explorers',
+    avatar: 'https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    subscribers: 850000,
+    verified: true,
+  },
+  {
+    id: '3',
+    name: 'Cooking Delights',
+    avatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    subscribers: 2500000,
+    verified: true,
+  },
+  {
+    id: '4',
+    name: 'Gaming Universe',
+    avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    subscribers: 3200000,
+    verified: true,
+  },
+  {
+    id: '5',
+    name: 'Travel Diaries',
+    avatar: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    subscribers: 940000,
+    verified: true,
+  },
+];
+
+export const videos: Video[] = [
+  {
+    id: '1',
+    title: 'Advanced React Patterns Every Developer Should Know',
+    thumbnail: 'https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    channelName: 'Tech Insights',
+    channelAvatar: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    views: 1245678,
+    timestamp: '2023-12-15',
+    duration: '12:45',
+    videoUrl: 'https://www.example.com/video1',
+  },
+  {
+    id: '2',
+    title: 'Exploring the Amazon Rainforest: Hidden Treasures',
+    thumbnail: 'https://images.pexels.com/photos/258117/pexels-photo-258117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    channelName: 'Nature Explorers',
+    channelAvatar: 'https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    views: 987654,
+    timestamp: '2023-11-28',
+    duration: '18:32',
+    videoUrl: 'https://www.example.com/video2',
+  },
+  {
+    id: '3',
+    title: 'The Ultimate Pasta Carbonara Recipe: Chef\'s Secrets',
+    thumbnail: 'https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    channelName: 'Cooking Delights',
+    channelAvatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    views: 2345678,
+    timestamp: '2024-01-05',
+    duration: '10:15',
+    videoUrl: 'https://www.example.com/video3',
+  },
+  {
+    id: '4',
+    title: 'Cyberpunk 2077: Ultimate Guide to Night City',
+    thumbnail: 'https://images.pexels.com/photos/2531709/pexels-photo-2531709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    channelName: 'Gaming Universe',
+    channelAvatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    views: 3456789,
+    timestamp: '2023-12-30',
+    duration: '25:40',
+    videoUrl: 'https://www.example.com/video4',
+  },
+  {
+    id: '5',
+    title: 'Top 10 Hidden Gems in Tokyo: Travel Guide',
+    thumbnail: 'https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    channelName: 'Travel Diaries',
+    channelAvatar: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    views: 876543,
+    timestamp: '2024-01-10',
+    duration: '15:20',
+    videoUrl: 'https://www.example.com/video5',
+  },
+  {
+    id: '6',
+    title: 'Machine Learning Explained: From Basics to Advanced',
+    thumbnail: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    channelName: 'Tech Insights',
+    channelAvatar: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    views: 1654321,
+    timestamp: '2023-12-08',
+    duration: '22:15',
+    videoUrl: 'https://www.example.com/video6',
+  },
+  {
+    id: '7',
+    title: 'Wildlife Photography: Capturing Perfect Moments',
+    thumbnail: 'https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    channelName: 'Nature Explorers',
+    channelAvatar: 'https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    views: 765432,
+    timestamp: '2023-11-20',
+    duration: '14:50',
+    videoUrl: 'https://www.example.com/video7',
+  },
+  {
+    id: '8',
+    title: 'How to Make the Perfect Sourdough Bread at Home',
+    thumbnail: 'https://images.pexels.com/photos/1387070/pexels-photo-1387070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    channelName: 'Cooking Delights',
+    channelAvatar: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    views: 2123456,
+    timestamp: '2024-01-02',
+    duration: '16:30',
+    videoUrl: 'https://www.example.com/video8',
+  },
+];
+
+export const comments: Comment[] = [
+  {
+    id: '1',
+    user: 'Alex Johnson',
+    avatar: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    content: 'This video was really helpful! I learned so much about React patterns.',
+    likes: 245,
+    timestamp: '2 days ago',
+    replies: [
+      {
+        id: '1-1',
+        user: 'Tech Insights',
+        avatar: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        content: 'Glad you found it helpful, Alex! More advanced React topics coming soon.',
+        likes: 56,
+        timestamp: '1 day ago',
+      }
+    ]
+  },
+  {
+    id: '2',
+    user: 'Sarah Miller',
+    avatar: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    content: 'Your explanation of custom hooks blew my mind. This is going to save me so much time!',
+    likes: 189,
+    timestamp: '3 days ago',
+  },
+  {
+    id: '3',
+    user: 'David Williams',
+    avatar: 'https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    content: 'I\'ve been struggling with these concepts for weeks. This video explained everything so clearly. Thank you!',
+    likes: 324,
+    timestamp: '1 week ago',
+    replies: [
+      {
+        id: '3-1',
+        user: 'Ellie Thompson',
+        avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        content: 'Same here! Really helped me get unstuck on my project.',
+        likes: 42,
+        timestamp: '5 days ago',
+      }
+    ]
+  },
+  {
+    id: '4',
+    user: 'Mike Peters',
+    avatar: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    content: 'Would love to see a follow-up video on performance optimization for these patterns!',
+    likes: 156,
+    timestamp: '4 days ago',
+  },
+  {
+    id: '5',
+    user: 'Jennifer Lee',
+    avatar: 'https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    content: 'This is exactly what I needed for my upcoming project. Your explanations are always so clear.',
+    likes: 278,
+    timestamp: '2 weeks ago',
+  }
+];
